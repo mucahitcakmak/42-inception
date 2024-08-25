@@ -75,3 +75,33 @@ docker container exec -it nginx bash // exec ne ona bakılacak. ve bash ne alaka
 ![alt text](image-3.png)
 
 ### Docker Compose
+
+```
+docker login --username mucahitcakmak
+```
+- Giriş yapma hatası alındığında bu şekilde giriş yapılabilir.
+
+### Docker Network
+
+- Docker containerlarının bir sanal makine gibi çalışmasını sağlayan sanal bir network yapısıdr.
+
+- Teorik olarak conteinerlar birbirinden izoledirler fakat conteinerları birbirine bağlayabiliriz. Aynı
+network içerisindeymiş gibi birbirleri ile iletişime geçmelerini sağlayabiliriz.
+
+
+```c
+// docker network driver ları:
+bridge // containera ip atanmazsa docker tarafından otomatik atanır
+none // container ın bir ip e bağlı kalmasını istemiyorsak
+host // container ın docker engine ile haberleşmesini sağlar
+```
+
+- docker network create network_adı
+    - --driver
+- docker network inspect network_adı
+    - network detaylarını görüntüler. (aynı şekilde 'docker inspect container_id' komutu ile container hakkında da bilgi sahibi olunabilir.)
+
+container ayağa kaldırırken "--network network_adı" parametresini girersek, aynı networke sahip containerlar birbirleri arasında altağ ile bağlanmış olacaktır. nginx yada işletim sistemi üzerinden ping atarak bağlantıyı doğrulayabilir yada docker inspect ile network altında ip adreslerini görebiliriz.
+
+- docker network disconnect network_adı cıkarılmak_istenen_container
+    - bu şekilde containerın o networkden kaldırılmasını sağlayabiliriz.
