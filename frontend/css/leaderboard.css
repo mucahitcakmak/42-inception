@@ -1,0 +1,115 @@
+/* Genel Ayarlar */
+.leaderboard {
+    max-width: 65vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table thead {
+    color: #666666;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+}
+
+table tbody tr {
+    transition: all 0.2s ease-in-out;
+}
+
+table tbody tr td {
+    color: rgb(216, 216, 216);
+}
+
+table tbody tr:hover {
+    transform: scale(1.025);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.table-p {
+    width: 8em;
+    padding-left: 1em;
+    height: 1em;
+    text-align: start;
+	font-size: calc(var(--base-font-size) + 3px);
+}
+
+table tbody tr td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(17, 0, 17, 0.4);
+}
+
+@media (max-width: 860px) {
+    .leaderboard {
+        width: 90vw;
+        padding: 0;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+}
+
+/* İlk 3 Element İçin Özel Stil */
+.leaderboard tbody tr:nth-child(1) td {
+    color: gold;
+    font-weight: 800;
+    height: 13vh;
+}
+.leaderboard tbody tr:nth-child(1) td p, .leaderboard tbody tr:nth-child(1) td {
+    font-size: calc(var(--base-font-size) + 8px);
+
+}
+.leaderboard tbody tr:nth-child(1) td img {
+    width: 65px; height: 65px;
+}
+
+
+.leaderboard tbody tr:nth-child(2) td {
+    color: silver;
+    font-weight: 800;
+    height: 11vh;
+}
+.leaderboard tbody tr:nth-child(2) td p, .leaderboard tbody tr:nth-child(2) td {
+    font-size: calc(var(--base-font-size) + 6px);
+}
+.leaderboard tbody tr:nth-child(2) td img {
+    width: 60px; height: 60px;
+}
+
+.leaderboard tbody tr:nth-child(3) td {
+    color: #cd7f32;
+    font-weight: 800;
+    height: 9vh;
+}
+.leaderboard tbody tr:nth-child(3) td p, .leaderboard tbody tr:nth-child(3) td {
+    font-size: calc(var(--base-font-size) + 4px);
+}
+.leaderboard tbody tr:nth-child(3) td img {
+    width: 55px; height: 55px;
+}

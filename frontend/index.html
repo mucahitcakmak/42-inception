@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+        <title>42 PONG</title>
+		<link rel="icon" type="image/x-icon" href="img/42_logo.webp"></link>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+		<!-- Bootstrap icons -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" ></link>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<!-- MY CSS FILES -->
+		<link href="css/base_background.css" rel="stylesheet"></link>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
+		<link href="css/root.css" rel="stylesheet"></link>
+		<link href="css/mainpage.css" rel="stylesheet"></link>
+		<link href="css/mainpage_chat.css" rel="stylesheet"></link>
+		<link href="css/leaderboard.css" rel="stylesheet"></link>
+		<link href="css/friends.css" rel="stylesheet"></link>
+		<link href="css/profile.css" rel="stylesheet"></link>
+		<link href="css/statistics.css" rel="stylesheet"></link>
+		<link href="css/matchs-history.css" rel="stylesheet"></link>
+	</head>
+
+	<body>
+		<!-- MY JS -->
+		<script src="js/SPA.js"></script>
+		<script src="js/mainpage.js"></script>
+		<script src="js/leaderboard.js"></script>
+		<script src="js/friends.js"></script>
+		<script src="js/profile.js"></script>
+		<script src="js/statistics.js"></script>
+		<script src="js/matchs-history.js"></script>
+		<script src="js/base_background.js"></script>
+		<svg id="backGroundColor"></svg>
+
+		<!-- SAĞ VE SOL PANELİ BİRBİRİNDEN AYIR -->
+		<div class="centering-element">
+			<!-- SOL PANEL -->
+			<div class="left-panel row d-flex justify-content-evenly">
+				<!-- TAB BAR -->
+				<nav class="nav d-flex justify-content-evenly align-items-center">
+				<a id="homeBTN" href="" class="nav-item is-active" data-target-path="/home" active-color="orange">Home</a>
+				<a id="leaderboardBTN" href="" class="nav-item" data-target-path="/leaderboard" active-color="green">Leaderboard</a>
+				<a id="statisticsBTN" href="" class="nav-item" data-target-path="/statistics" active-color="blue">Statistics</a>
+				<a id="friendsBTN" href="" class="nav-item" data-target-path="/friends" active-color="red">Friends</a>
+				<a id="profileBTN" href="" class="nav-item" data-target-path="/profile" active-color="rebeccapurple">Profile</a>
+				<input id="search" class="search" placeholder="Search Friend...">
+				<span class="nav-indicator"></span>
+				</nav>
+
+				<!-- DEGISECEK ALAN -->
+				<div id="content" class="content rounded fade-in">
+
+				</div>
+			</div>
+
+			<!-- SAĞ PANEL -->
+			<div class="right-panel row d-flex justify-content-evenly">
+				<div class="card card-stats">
+					<div class="card-body">
+						<div class="row">
+						<div class="col">
+							<h5 class="card-title text-uppercase mb-0">mucakmak</h5>
+							<span class="h5 font-weight-bold mb-0" style="color: #5f5d59;">Score:</span>
+							<span class="h5 font-weight-bold mb-0">159</span>
+							<span class="h5 font-weight-bold mb-0" style="color: #5f5d59;">Rank:</span>
+							<span class="h5 font-weight-bold mb-0">31</span>
+						</div>
+						<div class="col">
+						<div class="icon icon-shape text-white rounded-circle shadow">
+							<img src="img/mucakmak.jpg" alt="intra-image" class="card-image">
+						</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!-- CARD FINISH -->
+				<!-- CHAT -->
+				<div class="chat-panel">
+					<div class="chat-container">
+						<div id="chat-scroll" class="chat-scroll">
+							<div class="chat-log text-white" id="chat-log">
+						<!-- İÇERİK -->
+							</div>
+							</div>
+						<div class="input-container">
+								<textarea maxlength="35" rows="1" id="message-input" placeholder="Type your message..." rows="1"></textarea >
+								<button id="send-button" class="cool-btn">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

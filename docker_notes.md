@@ -105,3 +105,13 @@ container ayağa kaldırırken "--network network_adı" parametresini girersek, 
 
 - docker network disconnect network_adı cıkarılmak_istenen_container
     - bu şekilde containerın o networkden kaldırılmasını sağlayabiliriz.
+
+### Docker Volume
+
+![alt text](image-4.png)
+container içerisindeki verinin container dışında bir yerde saklanması gerekir. çünkü container silindiğinde verininde kaybolmaması gerekir.
+
+- docker volume create volume_name
+    - docker volume inspect volume_name -> volumenin detay bilgilerine erişebiliriz.
+- docker run -v abc:dbc
+    - docker komutlarında iki nokta kullanıldığında genelde bunun anlamı, soldaki container dışı sağdaki ise container içindeki konumlandırmalar oluyor. örneğin volume da söylenen şey dbc dosya dizinini sana verdiğim abc dosya dizini ile yer değiştir. yani bağlantı kurarken yada veri kaydederken bu dosya dizinine kaydet. 

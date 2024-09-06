@@ -1,0 +1,151 @@
+/* Main Container */
+.match-container {
+  display: grid;
+  grid-template-columns: 27% 73%;
+  gap: 30px;
+  height: 65vh;
+}
+
+/* Left Panel */
+.match-left-panel {
+  background-color: #131b2771;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: none;
+  border-radius: 15px;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.back-button {
+  background-color: rgb(228, 92, 92);
+  max-height: 5.5vh;
+}
+
+.history-header h2 {
+  font-size: 17px;
+  margin: 0;
+  flex-grow: 1; /* Ensures the title takes up available space */
+  text-align: center; /* Centers the title text */
+}
+
+.match-tournament-histories {
+  display: grid;
+}
+
+.cool-btn.match-btn {
+  display: flex;
+  max-width: 14.5vw;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 7vh;
+  flex-direction: column; /* Aligns items vertically */
+}
+
+.cool-btn.match-btn .match-title {
+  align-self: flex-start;
+}
+
+.cool-btn.match-btn .match-time {
+  color: #888;
+  font-size: 12px;
+  margin-right: 20px;
+  align-self: flex-start; /* Aligns to the start of the container */
+}
+
+.cool-btn.match-btn .match-score {
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto; /* Aligns the score to the right */
+}
+
+/* Right Panel */
+.match-right-panel {
+  padding: 10px 40px;
+  overflow-y: auto;
+  max-height: 65vh;
+  max-width: 51vw;
+  border-radius: 15px;
+  background-color: #131b2771;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.match-card {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fcf3cf;
+  width: 25vw;
+  height: calc(65vh - 40px); /* Ensures two cards fit within the panel */
+  background-color: #0D1B2A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.players-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 15vh;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.match-player {
+  text-align: center;
+}
+
+.table-img.square-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.05);
+}
+
+.match-score-center {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.graph-panel {
+  background-color: #685d5d57;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+  border-radius: 15px;
+}
+
+.info-panel {
+  background-color: #918b896e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+  border-radius: 15px;
+
+}
+
+.new-cool {
+  background-color: transparent;
+  color: white;
+  border: 3px solid #fff;
+}

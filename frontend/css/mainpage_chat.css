@@ -1,0 +1,87 @@
+/* CHAT CSS */
+.right-panel .chat-panel {
+  height: 65vh;
+  width: 30vw;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.right-panel .chat-container {
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-end;
+	background-color: rgba(16, 15, 15, 0.901);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.chat-scroll {
+  max-height: 56vh;
+  word-wrap: break-word;
+}
+
+.chat-log {
+  flex: 1;
+  overflow-y: auto;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  max-height: 56vh;
+}
+
+.input-container {
+	display: flex;
+  padding-right: 10px;
+  align-items: center;
+  padding-left: 10px;
+	border-radius: 10px;
+	background-color: #131b2771;
+}
+
+#message-input {
+  	flex: 1;
+	padding: 5px;
+	border-radius: 5px;
+  	width: 10vw;
+	border: none;
+	resize: vertical;
+	height: 4vh;
+  resize: none;
+}
+
+#send-button {
+	border-radius: 5px;
+	border: none;
+	margin-left: 10px;
+  width: auto;
+  min-width: 3vw;
+  padding: 0; 
+  height: 4vh;
+	cursor: pointer;
+}
+
+/* CHAT BARI ÖZELLEŞTİRME */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

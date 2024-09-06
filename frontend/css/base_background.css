@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+	background: radial-gradient(ellipse at bottom, rgb(22, 31, 42) 0%, rgb(7, 8, 12) 100%);
+	font-family: "Rowdies", sans-serif;
+}
+
+#backGroundColor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+	overflow: hidden;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* Ekran boyutuna göre otomatik yazı fontunu büyütme */
+@media (max-width: 860px) {
+    p, td {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 861px) and (max-width: 1920px) {
+    p, td {
+        font-size: var(--base-font-size);
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    p, td {
+        font-size: calc(var(--base-font-size) + 3px);
+    }
+}
+
+@media (min-width: 2561px) {
+    p, td {
+        font-size: calc(var(--base-font-size) + 9px);
+    }
+}
