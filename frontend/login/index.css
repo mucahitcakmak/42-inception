@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Montserrat:wght@400;700;800;900&display=swap');
+
+#backGroundColor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+	overflow: hidden;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* 42 AUTH BUTTON */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    z-index: 1;
+    padding: 15px 20px;
+    font: 13px 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 1em;
+    transition: .4s ease-in-out;
+}
+
+a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+@media (min-width: 417px) and (max-width: 567px) {
+    a {
+        padding: 15px 30px;
+        font: 16px 'Montserrat';
+    }
+}
+
+@media (min-width: 568px) {
+    a {
+        padding: 15px 50px;
+        font: 23px 'Montserrat';
+    }
+}
+
+.button2 {
+    color: black;
+    background-color: #10FFB4;
+    border-left: 3px transparent solid;
+    border-right: 3px transparent solid;
+}
+
+.button2:hover {
+    color: #10FFB4;
+    background-color: black;
+    border-left: #10FFB4 3px solid;
+    border-right: #10FFB4 3px solid;
+}

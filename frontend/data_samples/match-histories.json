@@ -1,0 +1,15 @@
+[
+    {
+        "type": "tournament",
+        "match1_id": 1,
+        "match2_id": null
+    },
+    {
+        "type": "normal",
+        "match1_id": 3
+    },
+    {
+        "type": "normal",
+        "match1_id": 2
+    }
+]

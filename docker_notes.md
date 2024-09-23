@@ -115,3 +115,7 @@ container içerisindeki verinin container dışında bir yerde saklanması gerek
     - docker volume inspect volume_name -> volumenin detay bilgilerine erişebiliriz.
 - docker run -v abc:dbc
     - docker komutlarında iki nokta kullanıldığında genelde bunun anlamı, soldaki container dışı sağdaki ise container içindeki konumlandırmalar oluyor. örneğin volume da söylenen şey dbc dosya dizinini sana verdiğim abc dosya dizini ile yer değiştir. yani bağlantı kurarken yada veri kaydederken bu dosya dizinine kaydet. 
+
+
+- Bu linki okucam
+    - https://medium.com/kodluyoruzwordpress-uygulamas%C4%B1n%C4%B1n-dockerize-halinde-nginx-%C3%BCzerinden-serve-edilmesi-a574bc291b3

@@ -1,0 +1,34 @@
+[
+    {
+      "match_id": 1,
+      "match_date": "01-03-2024",
+      "p1_id": "museker",
+      "p2_id": "mucakmak",
+      "p1_point": 12,
+      "p2_point": 34
+    },
+    {
+        "match_id": 2,
+        "match_date": "01-03-2024",
+        "p1_id": "mucakmak",
+        "p2_id": "museker",
+        "p1_point": 23,
+        "p2_point": 6
+    },
+    {
+      "match_id": 3,
+      "match_date": "01-03-2024",
+      "p1_id": "museker",
+      "p2_id": "ogenc",
+      "p1_point": 7,
+      "p2_point": 21
+    },
+    {
+      "match_id": 4,
+      "match_date": "01-03-2024",
+      "p1_id": "ogenc",
+      "p2_id": "muhcelik",
+      "p1_point": 8,
+      "p2_point": 17
+    }
+]
