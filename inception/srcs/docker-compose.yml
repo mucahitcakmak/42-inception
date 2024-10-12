@@ -1,0 +1,23 @@
+services:
+  nginx:
+    image: nginx:latest
+    networks:
+      inception:
+
+  wordpress:
+    image: wordpress:latest-fpm
+    networks:
+      inception:
+    environment:
+      - .env
+
+  mariadb:
+    image: mariadb
+    networks:
+      inception:
+    environment:
+      - .env
+
+networks:
+  inception:
+    driver: bridge
