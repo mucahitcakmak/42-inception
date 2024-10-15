@@ -1,0 +1,31 @@
+services:
+  nginx:
+    image: nginx
+    # depends_on:
+    #   - wordpress
+    build: ./requirements/nginx/
+    ports:
+      - "443:443"
+    networks:
+      inception:
+
+  # wordpress:
+  #   image: wordpress
+  #   links:
+  #     - mariadb
+  #   env_file: .env
+  #   networks:
+  #     inception:
+
+  # mariadb:
+  #   image: mariadb
+  #   env_file: .env
+  #   ports:
+  #     - "3306:3306"
+  #   networks:
+  #     inception:
+
+
+networks:
+  inception:
+    driver: bridge
