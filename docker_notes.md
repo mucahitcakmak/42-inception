@@ -119,3 +119,7 @@ container içerisindeki verinin container dışında bir yerde saklanması gerek
 
 - Bu linki okucam
     - https://medium.com/kodluyoruzwordpress-uygulamas%C4%B1n%C4%B1n-dockerize-halinde-nginx-%C3%BCzerinden-serve-edilmesi-a574bc291b3
+
+
+### Docker Portainer
+Proje büyüdükçe çok fazla containerımız oluyor ve bunları görmek, düzenlemek zorlaşıyor. Portainer ise burada bize containerları görselleştirerek düzenlememizi kolaylaştırıyor.

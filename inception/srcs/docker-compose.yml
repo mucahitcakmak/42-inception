@@ -1,22 +1,41 @@
 services:
   nginx:
-    image: nginx:latest
+    image: nginx
     networks:
       inception:
+    build: ./requirements/nginx/
+    ports:
+      - 443:443
+    depends_on:
+      - wordpress
 
   wordpress:
-    image: wordpress:latest-fpm
+    image: wordpress
     networks:
       inception:
-    environment:
+    links:
+      - mariadb
+    build: ./requirements/nginx/
+    volumes:
+      - wordpress_app:/var/www/html
+    env_file:
       - .env
 
   mariadb:
     image: mariadb
     networks:
       inception:
-    environment:
+    # build: ./requirements/mariadb/
+    ports:
+      - 3306:3306
+    volumes:
+      - maria_db:/var/lib/mysql
+    env_file:
       - .env
+
+volumes:
+  wordpress_app:
+  maria_db:
 
 networks:
   inception:
