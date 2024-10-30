@@ -1,8 +1,7 @@
 FROM debian:buster
 
-RUN apt-get update && apt-get install -y mariadb-server
-RUN chown -R mysql:mysql /var/lib/mysql
-RUN chmod -R 755 /var/lib/mysql
+RUN apt-get update
+RUN apt-get install -y mariadb-server
 
 EXPOSE 3306
 
